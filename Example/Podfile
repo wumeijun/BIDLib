@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'BIDLib', :exclusive => true do
+  pod "BIDLib", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "BIDLib", :path => "../"
+
+  pod 'Kiwi'
+end
